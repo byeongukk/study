@@ -2,6 +2,8 @@ package com.kh.practice;
 
 import java.util.Scanner;
 
+import javax.swing.plaf.synth.SynthSpinnerUI;
+
 public class Example {
 	Scanner scan = new Scanner(System.in);
 
@@ -14,18 +16,24 @@ public class Example {
 		en = scan.nextInt();
 		System.out.println("수학 점수  : ");
 		ma = scan.nextInt();
-		
 		sum = (kor + en + ma);
-		avg = (double)sum/3;
+		avg = sum/3.0;
+		System.out.println("합계 점수 : " + sum);
+		System.out.println("평균 점수 : " + avg);
+		String result = ((kor >= 40 && en >= 40 && ma >= 40) && avg >= 60)?"합격":"불합격";
+		System.out.println(result);
 		
-		String str = ((kor >= 40 && en >= 40 && ma >= 40) && avg >= 60)?"합격":"불합격";
-		System.out.println(str); 
+		if((kor >= 40 && en >= 40 && ma >= 40) && avg >= 60) {
+			System.out.println("합격");
+		} else {
+			System.out.println("불합격");
+		}
 	}
 	public void sample2(){
 		String name,gender;
 		int grade,cls,stuNum;
 		double po;
-/*		System.out.println("성별 입력 : ");
+		System.out.println("성별 입력 : ");
 		gender = scan.nextLine();
 		
 		System.out.println("이름 입력 : ");
@@ -38,7 +46,7 @@ public class Example {
 		cls = scan.nextInt();
 		
 		System.out.println("번호 입력 : ");
-		stuNum = scan.nextInt();*/
+		stuNum = scan.nextInt();
 		
 		System.out.println("점수 입력 : ");
 		po = scan.nextDouble();
@@ -47,8 +55,8 @@ public class Example {
 		po = (int)po/100.0;
 		System.out.println(po);
 		
-		/*gender =(gender.charAt(0)=='M'||gender.charAt(0)=='m')?"남학생":"여학생";
-		System.out.println(grade+"학년"+cls+"반"+stuNum+"번"+gender +name+"은 성적이"+po+"이다");*/
+		gender =(gender.charAt(0)=='M'||gender.charAt(0)=='m')?"남학생":"여학생";
+		System.out.println(grade+"학년"+cls+"반"+stuNum+"번"+gender +name+"은 성적이"+po+"이다");
 	}
 	public void sample3() {
 		int a;
