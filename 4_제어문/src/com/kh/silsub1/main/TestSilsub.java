@@ -8,8 +8,9 @@ public class TestSilsub {
 		//m.test2();
 		//m.test4();
 		//m.test5();
-		m.test6();
+		//m.test6();
 		//m.test7();
+		m.test11();
 	}
 
 }

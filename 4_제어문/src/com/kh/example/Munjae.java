@@ -136,4 +136,34 @@ public class Munjae {
 		}
 		System.out.println(point+"점은"+grade+"학점 입니다");
 	}
+	public void test8() {
+		int num1;
+		
+		System.out.println("");
+	}
+	public void test11() {
+		int kor,en,ma,sum,avg;
+		System.out.println("국어 점수 : ");
+		kor = scan.nextInt();
+		System.out.println("영어 점수 : ");
+		en = scan.nextInt();
+		System.out.println("수학 점수 : ");
+		ma = scan.nextInt();
+		sum = kor+en+ma;
+		avg = sum/3;
+		
+		if(avg<60) {
+			System.out.println("평균점수 미달로 불합격");
+		} else { 
+			if (kor < 40 ) {
+				System.out.println("국어 과목 점수 미달");
+			}	if (en < 40 ) { 
+				System.out.println("영어 과목 점수 미달");
+			}   if (ma < 40 ) {
+				System.out.println("수학 과목 점수 미달");
+			} else {
+				System.out.println("합격입니다");
+			}
+		}
+	}
 }
