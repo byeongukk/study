@@ -1,5 +1,6 @@
 package com.kh.chap02_loopingStatement;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class A_for {
@@ -173,4 +174,73 @@ public class A_for {
 			System.out.println();
 		}
 	}
+	public void codingDojang1() {
+		System.out.println("양의 정수를 입력 : ");
+		String num = scan.nextLine();
+		ArrayList<Integer> arr = new ArrayList<>();
+		ArrayList<Character> chArr = new ArrayList<>();
+		for(int i = 0; i<num.length(); i++) {
+			chArr.add(num.charAt(i));
+			
+		}
+		System.out.println(arr.add(1));
+		
+	}
+	public void sangUnfor1() {
+		int num,sum=1;
+		
+		System.out.println("정수 하나 입력 : ");
+		num = scan.nextInt();
+		for(int i = 1; i<=num; i++) {
+			sum *= i;
+			System.out.println(i);
+		}
+		System.out.println(num + "까지곱한 값은 " + sum);
+	}
+	public void sangUnfor2() {
+		int num=0,even=0,odd=0;
+		System.out.println("정수 하나 입력");
+		num = scan.nextInt();
+		for(int i=1; i<=num; i++) {
+			if(i%2 == 0) {
+				even += i;
+			} else {
+				odd += i;
+			}
+		}
+		System.out.println(num + "까지 짝수만 더한 값 : "+ even);
+		System.out.println(num + "까지 홀수만 더한 값 : "+ odd);
+	}
+	public void sangUnfor3() {
+		for(int i=0; i<4; i++) {
+			for(int j=0; j<4; j++) {
+				if(i==0||i==3) {
+					System.out.print("*");
+				} else {
+					if(j==1||j==2) {
+						System.out.print("0");
+					} else {
+						System.out.print("*");
+					}
+				}
+			}
+			System.out.println();
+		}
+	}
+	public void yerangfor1() {
+		int sum=0;
+
+		System.out.println("첫번째 정수 입력");
+		int num1 = scan.nextInt();
+		System.out.println("두번째 정수 입력 ");
+		int num2 = scan.nextInt();
+		System.out.println("범위를 정해주세요 :");
+		int lastNum = scan.nextInt();
+	
+		for(int i = 0; i<lastNum; i++) {
+			sum += (num1+num2);
+			System.out.println(num1+" + "+num2+" = " + sum);
+		}
+	}
+
 }
