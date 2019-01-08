@@ -10,9 +10,12 @@ public class TestMain {
 		//aTest.bu_for3();
 		//aTest.yerangfor1();
 		//bTest.testWhile4();
-		forTest.yerangFor3();
+		//forTest.yerangFor1();
+		//forTest.yerangFor2();
+		//forTest.yerangFor3();
 		//bTest.testWhile5();
 		//cTest.testDoWhile();
+		//forTest.ukFor1();
 	}
 
 }
