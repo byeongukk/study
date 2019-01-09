@@ -22,7 +22,6 @@ public class A_array {
 		for(int i=0; i<arr.length; i++) {
 			
 			arr[i] = value += 10;
-			
 		}
 		int sum2 = 0;
 		for(int i = 0; i < arr.length; i++) {
@@ -78,7 +77,6 @@ public class A_array {
 		//그리고 다시는 이전에 참조하던 배열을 다시 참조할 수 없다.
 		
 		darr = null;
-		
 		//nullpointerException 발생함
 		//아무것도 참조하지 않고 null이라는 특수한 값을 참조하고 있을때
 		//발생하는 에러.
