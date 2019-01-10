@@ -180,6 +180,30 @@ public class ArraySample {
 		
 	}
 	public void test12() {
+		int lottoNum[] = new int[6];
+		Random ran = new Random();
 		
+		//6자리 랜덤값 생성
+		for(int i=0; i<lottoNum.length; i++) {
+			lottoNum[i] = ran.nextInt(45)+1;
+		}
+		//오름차순으로 정렬
+		for(int i=0; i<lottoNum.length; i++) {
+			for(int j=0; j < i; j++) {
+				if(lottoNum[i] < lottoNum[j]) {
+					int temp;
+					temp = lottoNum[i];
+					lottoNum[i] = lottoNum[j];
+					lottoNum[j] = temp;
+				}
+			}
+		}
+		//출력
+		for(int i = 0; i < lottoNum.length; i++) {
+			System.out.println(i+1 +"번째 번호 : " + lottoNum[i]);
+		}
+		
+	
+	
 	}
 }
