@@ -199,11 +199,14 @@ public class ArraySample {
 			}
 		}
 		//출력
+		
+		
 		for(int i = 0; i < lottoNum.length; i++) {
 			System.out.println(i+1 +"번째 번호 : " + lottoNum[i]);
 		}
+	}
+	
+	public void test13() {
 		
-	
-	
 	}
 }
