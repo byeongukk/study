@@ -8,7 +8,7 @@ public class CastingSample {
 	Scanner scan = new Scanner(System.in);
 	ArrayList<String> arr = new ArrayList<>();
 	public void printUnicode() {
-		System.out.println("À¯´ÏÄÚµå·Î º¯È¯ÇÏ½Ã·Á´Â ¹®ÀÚ¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä");
+		System.out.println("ìœ ë‹ˆì½”ë“œë¡œ ë³€í™˜í•˜ì‹œë ¤ëŠ” ë¬¸ìë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš”");
 		char ch = scan.next().charAt(0);
 		int uniNum = ch;
 		System.out.println(ch +"is unicode : " + uniNum );
@@ -18,17 +18,17 @@ public class CastingSample {
 		arr.add("en");
 		arr.add("ma");
 		double kor,en,ma;
-		System.out.println("±¹¾î Á¡¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+		System.out.println("êµ­ì–´ ì ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 		kor = scan.nextDouble();
-		System.out.println("¿µ¾î Á¡¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+		System.out.println("ì˜ì–´ ì ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 		en = scan.nextDouble();
-		System.out.println("¼öÇĞ Á¡¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+		System.out.println("ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 		ma = scan.nextDouble();
 		
 		int sum = (int)(kor+en+ma);
 		int avg = sum/3;
-		System.out.println("ÃÑÁ¡ : " +sum);
-		System.out.println("Æò±Õ : " +avg);
+		System.out.println("ì´ì  : " +sum);
+		System.out.println("í‰ê·  : " +avg);
 	}
 	public void calcularScore() {
 		

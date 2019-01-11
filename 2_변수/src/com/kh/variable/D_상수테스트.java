@@ -1,20 +1,20 @@
 package com.kh.variable;
 
-public class D_»ó¼öÅ×½ºÆ® {
+public class D_ìƒìˆ˜í…ŒìŠ¤íŠ¸ {
 
 	public static void main(String[] args) {
-		new D_»ó¼öÅ×½ºÆ®().testFinal();
-		new D_»ó¼öÅ×½ºÆ®().testF();
+		new D_ìƒìˆ˜í…ŒìŠ¤íŠ¸().testFinal();
+		new D_ìƒìˆ˜í…ŒìŠ¤íŠ¸().testF();
 	}
 	public void testFinal() {
-		//»ó¼ö Å×½ºÆ®
+		//ìƒìˆ˜ í…ŒìŠ¤íŠ¸
 		int age;
-		final int AGE; // »ó¼öµµ steak¿µ¿ª¿¡ Ãß°¡µÊ
+		final int AGE; // ìƒìˆ˜ë„ stackì˜ì—­ì— ì¶”ê°€ë¨
 		age = 20;
 		AGE = 20;
 		
 		age = 30;
-		// AGE = 30; »ó¼ö´Â ÃÊ±âÈ­ ÇÏ¸é º¯°æ ºÒ°¡
+		// AGE = 30; ìƒìˆ˜ëŠ” ì´ˆê¸°í™” í•˜ë©´ ë³€ê²½ ë¶ˆê°€
 		System.out.println(AGE + 20);
 	}
 	public void testF() {
@@ -22,5 +22,3 @@ public class D_»ó¼öÅ×½ºÆ® {
 		System.out.println(i);
 	}
 }
-
-

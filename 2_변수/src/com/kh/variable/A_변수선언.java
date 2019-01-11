@@ -1,99 +1,98 @@
 package com.kh.variable;
 
-public class A_º¯¼ö¼±¾ğ {
-	//ÆĞÅ°Áö°¡ ´Ù¸£¸é °°Àº ÀÌ¸§ÀÇ Å¬·¡½ºµµ ¸¸µé ¼ö ÀÖ´Ù.
-	//Å¬·¡½ºÀÇ ÀÌ¸§Àº »ç½Ç ÆĞÅ°Áö¸¦ Æ÷ÇÔÇÑ ÀÌ¸§ÀÌ±â ¶§¹®ÀÌ´Ù.
-	//ex) com.kh.variable.A_º¯¼ö¼±¾ğ <- ÇöÀç Å¬·¡½ºÀÇ fullName
+public class A_ë³€ìˆ˜ì„ ì–¸ {
+	//íŒ¨í‚¤ì§€ê°€ ë‹¤ë¥´ë©´ ê°™ì€ ì´ë¦„ì˜ í´ë˜ìŠ¤ë„ ë§Œë“¤ ìˆ˜ ìˆë‹¤.
+	//í´ë˜ìŠ¤ì˜ ì´ë¦„ì€ ì‚¬ì‹¤ íŒ¨í‚¤ì§€ë¥¼ í¬í•¨í•œ ì´ë¦„ì´ê¸° ë•Œë¬¸ì´ë‹¤.
+	//ex) com.kh.variable.A_ë³€ìˆ˜ì„ ì–¸ <- í˜„ì¬ í´ë˜ìŠ¤ì˜ fullName
 	public void declareVariable() {
-		//¼ıÀÚÇü
-		//Á¤¼öÇü
+		//ìˆ«ìí˜•
+		//ì •ìˆ˜í˜•
 		byte bnum;
 		short snum;
 		int inum;
 		long lnum;
-		//½Ç¼öÇü
+		//ì‹¤ìˆ˜í˜•
 		float fnum;
 		double dnum;
 		
-		//³í¸®
+		//ë…¼ë¦¬
 		boolean  isTrue;
 		
-		//¹®ÀÚ
+		//ë¬¸ì
 		char ch;
 		
-		//¹®ÀÚÇü
-		String str; //ÀÌ¹Ì ¸¸µé¾îÁ®ÀÖ´Â class  ÂüÁ¶ º¯¼ö
+		//ë¬¸ìí˜•
+		String str; //ì´ë¯¸ ë§Œë“¤ì–´ì ¸ìˆëŠ” class  ì°¸ì¡° ë³€ìˆ˜
 		
 		bnum = 1;
 		snum = 2;
 		inum = 4;
-		lnum = 8;  //L À» ºÙÀÌÁö ¾Ê¾Æµµ ÀÚµ¿ Çüº¯È¯ÀÌ µÇ¹Ç·Î »ç¿ë°¡´É
+		lnum = 8;  //L ì„ ë¶™ì´ì§€ ì•Šì•„ë„ ìë™ í˜•ë³€í™˜ì´ ë˜ë¯€ë¡œ ì‚¬ìš©ê°€ëŠ¥
 		
-		fnum = 4.0f; //float´Â ¸®ÅÍ·²¿¡ f¸¦ ºÙ¿©¾ß ÇÑ´Ù.
+		fnum = 4.0f; //floatëŠ” ë¦¬í„°ëŸ´ì— fë¥¼ ë¶™ì—¬ì•¼ í•œë‹¤.
 		dnum = 8.0;
 		
-		isTrue = false; // true ³ª false ¸¸ »ç¿ëÇÑ´Ù
+		isTrue = false; // true ë‚˜ false ë§Œ ì‚¬ìš©í•œë‹¤
 		
 		ch = 'A';
-		str = "A"; //¹®ÀÚ¸¦ ÇÑ °³¸¸ ½áµµ ¸®ÅÍ·²Àº ""¸¦ »ç¿ëÇØ¾ß ÇÑ´Ù.
+		str = "A"; //ë¬¸ìë¥¼ í•œ ê°œë§Œ ì¨ë„ ë¦¬í„°ëŸ´ì€ ""ë¥¼ ì‚¬ìš©í•´ì•¼ í•œë‹¤.
 		
-		//º¯¼ö¿¡ ÀúÀåµÈ °ª Ãâ·ÂÇÏ±â
-		System.out.println("bnumÀÇ °ª" + bnum);
-		System.out.println("snumÀÇ °ª" + snum);
-		System.out.println("inumÀÇ °ª" + inum);
-		System.out.println("lnumÀÇ °ª" + lnum);
+		//ë³€ìˆ˜ì— ì €ì¥ëœ ê°’ ì¶œë ¥í•˜ê¸°
+		System.out.println("bnumì˜ ê°’" + bnum);
+		System.out.println("snumì˜ ê°’" + snum);
+		System.out.println("inumì˜ ê°’" + inum);
+		System.out.println("lnumì˜ ê°’" + lnum);
 		
-		System.out.println("fnumÀÇ °ª" + fnum);
-		System.out.println("dnumÀÇ °ª" + dnum);
+		System.out.println("fnumì˜ ê°’" + fnum);
+		System.out.println("dnumì˜ ê°’" + dnum);
 		
-		System.out.println("isTrueÀÇ °ª" + isTrue);
+		System.out.println("isTrueì˜ ê°’" + isTrue);
 		
-		System.out.println("chÀÇ °ª" + ch);
+		System.out.println("chì˜ ê°’" + ch);
 		
-		System.out.println("strÀÇ °ª" + str);
-		System.out.println("¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ");
+		System.out.println("strì˜ ê°’" + str);
+		System.out.println("ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡");
 		
 	}
 	
 	public void initVariable() {
-		//º¯¼ö ¼±¾ğ°ú µ¿½Ã¿¡ ÃÊ±âÈ­
-		//¼ıÀÚÇü
-		//Á¤¼öÇü
+		//ë³€ìˆ˜ ì„ ì–¸ê³¼ ë™ì‹œì— ì´ˆê¸°í™”
+		//ìˆ«ìí˜•
+		//ì •ìˆ˜í˜•
 		byte bnum = 1;
 		short snum = 2;
 		int inum = 4;
 		long lnum = 8;
-		//½Ç¼öÇü
+		//ì‹¤ìˆ˜í˜•
 		float fnum = 4.0f;
 		double dnum = 8.0;
 		
-		//³í¸®
+		//ë…¼ë¦¬
 		boolean  isTrue = true;
 		
-		//¹®ÀÚ
+		//ë¬¸ì
 		char ch = 'A';
-		//¹®ÀÚ¿­
+		//ë¬¸ìì—´
 		String str = "A";
 		
-		//º¯¼ö¿¡ ÀúÀåµÈ °ª Ãâ·ÂÇÏ±â
-		System.out.println("bnumÀÇ °ª" + bnum);
-		System.out.println("snumÀÇ °ª" + snum);
-		System.out.println("inumÀÇ °ª" + inum);
-		System.out.println("lnumÀÇ °ª" + lnum);
+		//ë³€ìˆ˜ì— ì €ì¥ëœ ê°’ ì¶œë ¥í•˜ê¸°
+		System.out.println("bnumì˜ ê°’" + bnum);
+		System.out.println("snumì˜ ê°’" + snum);
+		System.out.println("inumì˜ ê°’" + inum);
+		System.out.println("lnumì˜ ê°’" + lnum);
 		
-		System.out.println("fnumÀÇ °ª" + fnum);
-		System.out.println("dnumÀÇ °ª" + dnum);
+		System.out.println("fnumì˜ ê°’" + fnum);
+		System.out.println("dnumì˜ ê°’" + dnum);
 		
-		System.out.println("isTrueÀÇ °ª" + isTrue);
+		System.out.println("isTrueì˜ ê°’" + isTrue);
 		
-		System.out.println("chÀÇ °ª" + ch);
+		System.out.println("chì˜ ê°’" + ch);
 		
-		System.out.println("strÀÇ °ª" + str);
+		System.out.println("strì˜ ê°’" + str);
 	}
 	
 	public static void main(String[] args) {
-		A_º¯¼ö¼±¾ğ test = new A_º¯¼ö¼±¾ğ();
+		A_ë³€ìˆ˜ì„ ì–¸ test = new A_ë³€ìˆ˜ì„ ì–¸();
 		test.declareVariable();
-		test.initVariable();
 	}
 }

@@ -2,7 +2,7 @@ package com.kh.variable;
 
 import java.util.Scanner;
 
-public class C_º¯¼ö°ªº¯°æÅ×½ºÆ® {
+public class C_ë³€ìˆ˜ê°’ë³€ê²½í…ŒìŠ¤íŠ¸ {
 	public static void main(String[] args) {
 		changeValue();
 	}
@@ -12,32 +12,31 @@ public class C_º¯¼ö°ªº¯°æÅ×½ºÆ® {
 		int age;
 		double height;
 		
-		name = "ÃÖº´¿í";
+		name = "ìµœë³‘ìš±";
 		gender = 'M';
 		age = 20;
 		height = 199.9;
 		
-		
-		System.out.println("ÀÌ¸§Àº :" + name);
-		System.out.println("¼ºº°Àº :" + gender);
-		System.out.println("³ªÀÌ´Â :" + age);
-		System.out.println("Å°´Â   :" + height);
-		System.out.println("¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ");
+		System.out.println("ì´ë¦„ì€ :" + name);
+		System.out.println("ì„±ë³„ì€ :" + gender);
+		System.out.println("ë‚˜ì´ëŠ” :" + age);
+		System.out.println("í‚¤ëŠ”   :" + height);
+		System.out.println("ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡");
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		name = scan.nextLine();
-		System.out.println("¼ºº°À» ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
-		//¹®ÀÚ¸¦ ÀĞ¾î¿À´Â ¸Ş¼Òµå´Â charAt ¸Ş¼Òµå·Î ¹Ş¾Æ¿Â´Ù 
+		System.out.println("ì„±ë³„ì„ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
+		//ë¬¸ìë¥¼ ì½ì–´ì˜¤ëŠ” ë©”ì†Œë“œëŠ” charAt ë©”ì†Œë“œë¡œ ë°›ì•„ì˜¨ë‹¤ 
 		gender = scan.next().charAt(0);
-		System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		System.out.println("ë‚˜ì´ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		age = scan.nextInt();
-		System.out.println("Å°¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä : ");
+		System.out.println("í‚¤ë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš” : ");
 		height = scan.nextDouble();
-		System.out.println("ÀÌ¸§Àº :" + name);
-		System.out.println("¼ºº°Àº :" + gender);
-		System.out.println("³ªÀÌ´Â :" + age);
-		System.out.println("Å°´Â   :" + height);
+		System.out.println("ì´ë¦„ì€ :" + name);
+		System.out.println("ì„±ë³„ì€ :" + gender);
+		System.out.println("ë‚˜ì´ëŠ” :" + age);
+		System.out.println("í‚¤ëŠ”   :" + height);
 		
 		
 	}

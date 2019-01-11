@@ -1,6 +1,6 @@
 package com.kh.variable;
 
-public class E_¿À¹öÇÃ·Î¿ìÅ×½ºÆ® {
+public class E_ì˜¤ë²„í”Œë¡œìš°í…ŒìŠ¤íŠ¸ {
 
 	public static void main(String[] args) {
 		//printValueSize();
@@ -8,30 +8,30 @@ public class E_¿À¹öÇÃ·Î¿ìÅ×½ºÆ® {
 		calc();
 	}
 	public static void printValueSize() {
-		//º¯¼öÀÇ »çÀÌÁî
-		System.out.println("byteÀÇ Å©±â : " + Byte.BYTES + "byte");
-		System.out.println("shortÀÇ Å©±â : " + Short.BYTES + "byte");
-		System.out.println("intÀÇ Å©±â : " + Integer.BYTES + "byte");
-		System.out.println("longÀÇ Å©±â : " + Long.BYTES + "byte");
+		//ë³€ìˆ˜ì˜ ì‚¬ì´ì¦ˆ
+		System.out.println("byteì˜ í¬ê¸° : " + Byte.BYTES + "byte");
+		System.out.println("shortì˜ í¬ê¸° : " + Short.BYTES + "byte");
+		System.out.println("intì˜ í¬ê¸° : " + Integer.BYTES + "byte");
+		System.out.println("longì˜ í¬ê¸° : " + Long.BYTES + "byte");
 		
-		System.out.println("floatÀÇ Å©±â : " + Float.BYTES + "byte");
-		System.out.println("doubleÀÇ Å©±â : " + Double.BYTES + "byte");
+		System.out.println("floatì˜ í¬ê¸° : " + Float.BYTES + "byte");
+		System.out.println("doubleì˜ í¬ê¸° : " + Double.BYTES + "byte");
 		
-		System.out.println("charÀÇ Å©±â : " + Character.BYTES + "byte");
+		System.out.println("charì˜ í¬ê¸° : " + Character.BYTES + "byte");
 	}
 	public static void testOverFlow() {
-		//byte bnum = 128; //¿¡·¯, ÃÖ´ñ°ªÀÎ 127ÀÇ ¹üÀ§¸¦ ¹ş¾î³­ °ªÀÌ±â ¶§¹®
+		//byte bnum = 128; //ì—ëŸ¬, ìµœëŒ“ê°’ì¸ 127ì˜ ë²”ìœ„ë¥¼ ë²—ì–´ë‚œ ê°’ì´ê¸° ë•Œë¬¸
 		
-		//°è»ê °úÁ¤¿¡¼­ ¹üÀ§¸¦ ¹ş¾î³ª¸é ¿À¹öÇÃ·Î¿ì Ã³¸®µÈ´Ù.
-		//°ªÀÌ ¼øÈ¯µÊ ÃÖ´ë°ª 127 --> ÃÖ¼Ò°ª -128
+		//ê³„ì‚° ê³¼ì •ì—ì„œ ë²”ìœ„ë¥¼ ë²—ì–´ë‚˜ë©´ ì˜¤ë²„í”Œë¡œìš° ì²˜ë¦¬ëœë‹¤.
+		//ê°’ì´ ìˆœí™˜ë¨ ìµœëŒ€ê°’ 127 --> ìµœì†Œê°’ -128
 		
 		byte bnum = 127;
-		bnum = (byte)(bnum); //byte + int --> int(Çüº¯È¯ÀÌ ÇÊ¿ä)
+		bnum = (byte)(bnum); //byte + int --> int(í˜•ë³€í™˜ì´ í•„ìš”)
 		System.out.println("bnum : " + bnum);
 
 	}
 	public static void calc() {
-		//¿¡·¯°¡ ¹ß»ıÇÏÁö´Â ¾ÊÁö¸¸ ¿¹»óµÇ´Â °á°ú°ªÀÌ ³ª¿ÀÁö ¾Ê±â ‹š¹®¿¡ ÁÖÀÇÇØ¾ßÇÔ.
+		//ì—ëŸ¬ê°€ ë°œìƒí•˜ì§€ëŠ” ì•Šì§€ë§Œ ì˜ˆìƒë˜ëŠ” ê²°ê³¼ê°’ì´ ë‚˜ì˜¤ì§€ ì•Šê¸° Â‹Âšë•Œë¬¸ì— ì£¼ì˜í•´ì•¼í•¨.
 		int num1 = 100000000;
 		int num2 = 70000000;
 		

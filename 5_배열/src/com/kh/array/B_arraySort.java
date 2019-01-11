@@ -1,5 +1,7 @@
 package com.kh.array;
 
+import java.util.Random;
+
 public class B_arraySort {
 	public void testArraySort() {
 		//변수의 두 값 변경하기
@@ -60,5 +62,30 @@ public class B_arraySort {
 				System.out.print(iarr[i]);
 			}
 		}
+	}
+	public void testArraySort3() {
+		int[] iarr = new int[5];
+		Random ran = new Random();	
+		
+		for(int i=0; i < iarr.length; i++) {
+			iarr[i] = ran.nextInt(10);
+			System.out.println(i+"번째 인덱스의 값 : " + iarr[i]);
+		}
+		
+		for(int i = 1; i <iarr.length; i++) {
+			for(int j = 0; j < i; j++) {
+				if(iarr[j] > iarr[i]) {
+					int temp;
+					temp = iarr[i];
+					iarr[i] = iarr[j];
+					iarr[j] = temp;
+				}
+			}
+		}
+		System.out.println("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+		for(int i=0; i <iarr.length; i++) {
+			System.out.println(i+"번째 인덱스의 값 : " + iarr[i]);
+		}
+		
 	}
 }

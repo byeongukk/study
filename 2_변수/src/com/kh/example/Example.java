@@ -6,41 +6,41 @@ public class Example {
 	Scanner scan = new Scanner(System.in);
 	public void example1() {
 		
-		System.out.println("Ã¹¹øÂ° Á¤¼ö¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä :");
+		System.out.println("ì²«ë²ˆì§¸ ì •ìˆ˜ë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš” :");
 		int num1 = scan.nextInt();
-		System.out.println("µÎ¹øÂ° Á¤¼ö¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä :");
+		System.out.println("ë‘ë²ˆì§¸ ì •ìˆ˜ë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš” :");
 		int num2 = scan.nextInt();
 		
-		System.out.println("µÎ ¼öÀÇ ÇÕ : " + (num1 + num2));
-		System.out.println("µÎ ¼öÀÇ Â÷ : " + (num1 - num2));
-		System.out.println("µÎ ¼öÀÇ °ö : " + (num1 * num2));
-		System.out.println("µÎ ¼öÀÇ ³ª´« °ª : " + (num1 / num2));
-		System.out.println("µÎ ¼öÀÇ ³ª´« ³ª¸ÓÁö ¸ò: " + (num1 % num2));
+		System.out.println("ë‘ ìˆ˜ì˜ í•© : " + (num1 + num2));
+		System.out.println("ë‘ ìˆ˜ì˜ ì°¨ : " + (num1 - num2));
+		System.out.println("ë‘ ìˆ˜ì˜ ê³± : " + (num1 * num2));
+		System.out.println("ë‘ ìˆ˜ì˜ ë‚˜ëˆˆ ê°’ : " + (num1 / num2));
+		System.out.println("ë‘ ìˆ˜ì˜ ë‚˜ëˆˆ ë‚˜ë¨¸ì§€ ëª«: " + (num1 % num2));
 		
 	}
 	public void example2() {
 		
-		System.out.println("°¡·Î °ªÀ» ¼Ò¼öÁ¡À¸·Î Àû¾îÁÖ¼¼¿ä : ");
+		System.out.println("ê°€ë¡œ ê°’ì„ ì†Œìˆ˜ì ìœ¼ë¡œ ì ì–´ì£¼ì„¸ìš” : ");
 		double width = scan.nextDouble();
-		System.out.println("¼¼·Î °ªÀ» ¼Ò¼öÁ¡À¸·Î Àû¾îÁÖ¼¼¿ä : ");
+		System.out.println("ì„¸ë¡œ ê°’ì„ ì†Œìˆ˜ì ìœ¼ë¡œ ì ì–´ì£¼ì„¸ìš” : ");
 		double height = scan.nextDouble();
 		
-		System.out.println("¸éÀû : " + width * height);
-		System.out.println("µÑ·¹ : " + (width+height)*2);
+		System.out.println("ë©´ì  : " + width * height);
+		System.out.println("ë‘˜ë ˆ : " + (width+height)*2);
 	}
 	public void example3() {
 		int num;
-		System.out.println("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ½Ã¿À  : ");
+		System.out.println("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì‹œì˜¤  : ");
 		String str = scan.nextLine();
-		System.out.println("°¡Á®¿À°í½ÍÀº ¹®ÀÚ¿­ ¼ø¼­¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ê°€ì ¸ì˜¤ê³ ì‹¶ì€ ë¬¸ìì—´ ìˆœì„œë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		num = scan.nextInt()-1;
-		System.out.println(str.charAt(num)+ " ¹øÂ° ¹®ÀÚ : " + str.charAt(num));
-		System.out.println("°¡Á®¿À°í½ÍÀº ¹®ÀÚ¿­ ¼ø¼­¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println(str.charAt(num)+ " ë²ˆì§¸ ë¬¸ì : " + str.charAt(num));
+		System.out.println("ê°€ì ¸ì˜¤ê³ ì‹¶ì€ ë¬¸ìì—´ ìˆœì„œë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		num = scan.nextInt()-1;
-		System.out.println(str.charAt(num)+ " ¹øÂ° ¹®ÀÚ : " + str.charAt(num));
-		System.out.println("°¡Á®¿À°í½ÍÀº ¹®ÀÚ¿­ ¼ø¼­¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println(str.charAt(num)+ " ë²ˆì§¸ ë¬¸ì : " + str.charAt(num));
+		System.out.println("ê°€ì ¸ì˜¤ê³ ì‹¶ì€ ë¬¸ìì—´ ìˆœì„œë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		num = scan.nextInt()-1;
-		System.out.println(str.charAt(num)+ " ¹øÂ° ¹®ÀÚ : " + str.charAt(num));
+		System.out.println(str.charAt(num)+ " ë²ˆì§¸ ë¬¸ì : " + str.charAt(num));
 	}
 	
 }

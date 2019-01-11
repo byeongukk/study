@@ -1,26 +1,26 @@
 package com.kh.variable;
 
-//ÇöÀç À§Ä¡ÇÑ ÆĞÅ°Áö ¿ÜÀÇ ´Ù¸¥ ÆĞÅ°Áö¿¡ ¼ÓÇÑ Å¬·¡½º¸¦ »ç¿ëÇÒ¶§
-//import¸¦ ÇØÁà¾ßÇÑ´Ù.
+//í˜„ì¬ ìœ„ì¹˜í•œ íŒ¨í‚¤ì§€ ì™¸ì˜ ë‹¤ë¥¸ íŒ¨í‚¤ì§€ì— ì†í•œ í´ë˜ìŠ¤ë¥¼ ì‚¬ìš©í• ë•Œ
+//importë¥¼ í•´ì¤˜ì•¼í•œë‹¤.
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 
-public class B_Å°º¸µåÀÔ·ÂÅ×½ºÆ® {
+public class B_í‚¤ë³´ë“œì…ë ¥í…ŒìŠ¤íŠ¸ {
 	public static void main(String[] args) {
-		B_Å°º¸µåÀÔ·ÂÅ×½ºÆ® test = new B_Å°º¸µåÀÔ·ÂÅ×½ºÆ®();
+		B_í‚¤ë³´ë“œì…ë ¥í…ŒìŠ¤íŠ¸ test = new B_í‚¤ë³´ë“œì…ë ¥í…ŒìŠ¤íŠ¸();
 		/*test.inputTest1();*/
 		test.inputTest2();
 	}
 	public void inputTest1() {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("Á¤¼ö °ª ÇÑ °³¸¦ ÀÔ·ÂÇÏ¼¼¿ä > ");
+		System.out.print("ì •ìˆ˜ ê°’ í•œ ê°œë¥¼ ì…ë ¥í•˜ì„¸ìš” > ");
 		try {
 			String value = br.readLine();
 			/*System.out.println("value : " + (value*3));*/
 			
-			//¹®ÀÚ¿­ ÇüÅÂÀÇ ¼ıÀÚ¸¦ ½ÇÁ¦ ¼ıÀÚ µ¥ÀÌÅÍ·Î º¯È¯ÇÔ : parsing
+			//ë¬¸ìì—´ í˜•íƒœì˜ ìˆ«ìë¥¼ ì‹¤ì œ ìˆ«ì ë°ì´í„°ë¡œ ë³€í™˜í•¨ : parsing
 			int number = Integer.parseInt(value);
 			
 			System.out.println("number : " + (number*3));
@@ -29,17 +29,17 @@ public class B_Å°º¸µåÀÔ·ÂÅ×½ºÆ® {
 		}
 	}
 	public void inputTest2() {
-		//java 5¹öÁ¯ºÎÅÍ Ãß°¡µÈ Å¬·¡½º ÀÌ¿ë
+		//java 5ë²„ì ¼ë¶€í„° ì¶”ê°€ëœ í´ë˜ìŠ¤ ì´ìš©
 		
 		java.util.Scanner sc = new java.util.Scanner(System.in);
-		System.out.print("ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		System.out.print("ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		String name = sc.nextLine();
-		System.out.print("³ªÀÌ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		System.out.print("ë‚˜ì´ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		int age = sc.nextInt();
-		System.out.print("Å°(¼Ò¼öÁ¡ Ã¹ÀçÂ¥¸®±îÁöÀÔ·Â) : ");
+		System.out.print("í‚¤(ì†Œìˆ˜ì  ì²«ì¬ì§œë¦¬ê¹Œì§€ì…ë ¥) : ");
 		double height = sc.nextDouble();
-		System.out.println("ÀÌ¸§ : " + name);
-		System.out.println("³ªÀÌ : " + age);
-		System.out.println("Å° : " + height);
+		System.out.println("ì´ë¦„ : " + name);
+		System.out.println("ë‚˜ì´ : " + age);
+		System.out.println("í‚¤ : " + height);
 	}
 }

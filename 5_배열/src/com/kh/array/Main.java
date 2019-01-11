@@ -7,8 +7,8 @@ public class Main {
 		B_arraySort bTest = new B_arraySort();
 		C_arrayCopy cTest = new C_arrayCopy();
 		//aTest.testArray2();
-		//bTest.testArraySort2();
-		cTest.shallowCopy();
+		bTest.testArraySort3();
+		//cTest.shallowCopy();
 		//cTest.deepCopy();
 		//cTest.deepCopy2();
 		//cTest.deepCopy3();
