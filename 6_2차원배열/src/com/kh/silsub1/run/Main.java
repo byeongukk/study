@@ -5,7 +5,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		Sample sam = new Sample();
-		sam.munjae1();
+		Sample2 sam2 = new Sample2();
+		sam2.munjae1();
+		
 	}
 
 }

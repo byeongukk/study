@@ -43,7 +43,7 @@ public class Sample {
 		
 		} while (true);
 	}
-	public void printArray(int[][] iarr) {
+	public static void printArray(int[][] iarr) {
 		for(int i = 0; i < iarr.length; i++) {
 			for(int j = 0; j < iarr[i].length; j++) {
 				System.out.print(iarr[i][j]);
