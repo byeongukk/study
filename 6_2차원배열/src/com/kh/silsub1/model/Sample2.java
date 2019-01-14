@@ -4,7 +4,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Sample2 {
-	public void munjae1() {
+	Scanner scan = new Scanner(System.in);
+public void munjae1() {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("행을 입력하세요 : ");
 		int row = scan.nextInt();
@@ -44,5 +45,34 @@ public class Sample2 {
 			System.out.println("행과 열이 같아야합니다");
 		}
 	}
+	public void munjae2() {
+		int arr[][] = new int[3][];
+		for(int i=0; i <arr.length; i++) {
+			System.out.println(i + "번째 인덱스 열 입력 :");
+			arr[i] = new int[scan.nextInt()];
+		}
+		int sum[] = new int[arr.length];
+		Random ran = new Random();
+		for(int i=0; i <arr.length; i++) {
+			for(int j=0; j <arr[i].length; j++) {
+				arr[i][j] = ran.nextInt(50)+1;
+				sum[i] += arr[i][j];
+			}
+			System.out.println(sum[i]);
+		}
 
+		
+		for(int i=0; i <arr.length; i++) {
+			for(int j=0; j < arr[i].length; j++) {
+				if(sum[i]%5 ==0) {
+					if(j!=arr[i].length-1) {
+						System.out.print(arr[i][j]);
+						System.out.print(", ");
+					} else {
+						System.out.println();
+					}
+				}
+			}
+		}
+	}
 }
