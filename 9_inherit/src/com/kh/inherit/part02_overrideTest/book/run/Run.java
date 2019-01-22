@@ -24,7 +24,11 @@ public class Run {
 		System.out.println(b1.equals(b4));
 		System.out.println(b1.hashCode());
 		System.out.println(b4.hashCode());
-		
+		int a = 2;
+		int b = 4;
+		int c = (++a) + b;
+		int d = c / (b--);
+		System.out.println((++a) - (--b) + c + d);
 		//해쉬코드는 서로 다르지만 b1과 b4는 값이 같이 때문에 같은 객체로 취급한다.
 		//이렇게 주소는 다르지만 값이 같은 객체를 동등객체라고 한다.
 		//주소값까지 같은 객체를 동일객체라고 한다.
