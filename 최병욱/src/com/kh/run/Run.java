@@ -17,8 +17,6 @@ public class Run {
 		wpArr[1] = new Gun("탕탕이","Gun",300,15000,80);
 		wpArr[2] = new Nuclear("한방","Nuclear",1000,50000,50);
 		pm.menu(wpArr,player);
-
-		
 		
 	}
 }

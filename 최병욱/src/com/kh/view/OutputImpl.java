@@ -20,7 +20,7 @@ public class OutputImpl implements Output {
 					System.out.println();
 					System.out.println();
 				}
-				Thread.sleep(500);
+				Thread.sleep(200);
 				printErase();
 			}
 		} catch (InterruptedException e) { }
